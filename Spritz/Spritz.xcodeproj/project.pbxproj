@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		795AC1571EE88E7100E7D91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AC1561EE88E7100E7D91D /* AppDelegate.swift */; };
+		795AC1591EE88E7100E7D91D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AC1581EE88E7100E7D91D /* ViewController.swift */; };
+		795AC15B1EE88E7100E7D91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795AC15A1EE88E7100E7D91D /* Assets.xcassets */; };
+		795AC15E1EE88E7100E7D91D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795AC15C1EE88E7100E7D91D /* Main.storyboard */; };
+		795AC1691EE88E7100E7D91D /* SpritzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AC1681EE88E7100E7D91D /* SpritzTests.swift */; };
+		795AC1751EE8B1C700E7D91D /* SpritzLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795AC1741EE8B1C700E7D91D /* SpritzLib.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		795AC1651EE88E7100E7D91D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 795AC14B1EE88E7100E7D91D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 795AC1521EE88E7100E7D91D;
+			remoteInfo = Spritz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		795AC1531EE88E7100E7D91D /* Spritz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spritz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		795AC1561EE88E7100E7D91D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		795AC1581EE88E7100E7D91D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		795AC15A1EE88E7100E7D91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		795AC15D1EE88E7100E7D91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		795AC15F1EE88E7100E7D91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		795AC1641EE88E7100E7D91D /* SpritzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpritzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		795AC1681EE88E7100E7D91D /* SpritzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpritzTests.swift; sourceTree = "<group>"; };
+		795AC16A1EE88E7100E7D91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		795AC1741EE8B1C700E7D91D /* SpritzLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpritzLib.framework; path = "../../../Library/Developer/Xcode/DerivedData/testws-euozfgrkadujtzffnmezuzzehaco/Build/Products/Debug/SpritzLib.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		795AC1501EE88E7100E7D91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795AC1751EE8B1C700E7D91D /* SpritzLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795AC1611EE88E7100E7D91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		795AC14A1EE88E7100E7D91D = {
+			isa = PBXGroup;
+			children = (
+				795AC1551EE88E7100E7D91D /* Spritz */,
+				795AC1671EE88E7100E7D91D /* SpritzTests */,
+				795AC1541EE88E7100E7D91D /* Products */,
+				795AC1731EE8B1C700E7D91D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		795AC1541EE88E7100E7D91D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				795AC1531EE88E7100E7D91D /* Spritz.app */,
+				795AC1641EE88E7100E7D91D /* SpritzTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		795AC1551EE88E7100E7D91D /* Spritz */ = {
+			isa = PBXGroup;
+			children = (
+				795AC1561EE88E7100E7D91D /* AppDelegate.swift */,
+				795AC1581EE88E7100E7D91D /* ViewController.swift */,
+				795AC15A1EE88E7100E7D91D /* Assets.xcassets */,
+				795AC15C1EE88E7100E7D91D /* Main.storyboard */,
+				795AC15F1EE88E7100E7D91D /* Info.plist */,
+			);
+			path = Spritz;
+			sourceTree = "<group>";
+		};
+		795AC1671EE88E7100E7D91D /* SpritzTests */ = {
+			isa = PBXGroup;
+			children = (
+				795AC1681EE88E7100E7D91D /* SpritzTests.swift */,
+				795AC16A1EE88E7100E7D91D /* Info.plist */,
+			);
+			path = SpritzTests;
+			sourceTree = "<group>";
+		};
+		795AC1731EE8B1C700E7D91D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				795AC1741EE8B1C700E7D91D /* SpritzLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		795AC1521EE88E7100E7D91D /* Spritz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795AC16D1EE88E7100E7D91D /* Build configuration list for PBXNativeTarget "Spritz" */;
+			buildPhases = (
+				795AC14F1EE88E7100E7D91D /* Sources */,
+				795AC1501EE88E7100E7D91D /* Frameworks */,
+				795AC1511EE88E7100E7D91D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spritz;
+			productName = Spritz;
+			productReference = 795AC1531EE88E7100E7D91D /* Spritz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		795AC1631EE88E7100E7D91D /* SpritzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795AC1701EE88E7100E7D91D /* Build configuration list for PBXNativeTarget "SpritzTests" */;
+			buildPhases = (
+				795AC1601EE88E7100E7D91D /* Sources */,
+				795AC1611EE88E7100E7D91D /* Frameworks */,
+				795AC1621EE88E7100E7D91D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				795AC1661EE88E7100E7D91D /* PBXTargetDependency */,
+			);
+			name = SpritzTests;
+			productName = SpritzTests;
+			productReference = 795AC1641EE88E7100E7D91D /* SpritzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		795AC14B1EE88E7100E7D91D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Richard Todd";
+				TargetAttributes = {
+					795AC1521EE88E7100E7D91D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					795AC1631EE88E7100E7D91D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 795AC1521EE88E7100E7D91D;
+					};
+				};
+			};
+			buildConfigurationList = 795AC14E1EE88E7100E7D91D /* Build configuration list for PBXProject "Spritz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 795AC14A1EE88E7100E7D91D;
+			productRefGroup = 795AC1541EE88E7100E7D91D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				795AC1521EE88E7100E7D91D /* Spritz */,
+				795AC1631EE88E7100E7D91D /* SpritzTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		795AC1511EE88E7100E7D91D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795AC15B1EE88E7100E7D91D /* Assets.xcassets in Resources */,
+				795AC15E1EE88E7100E7D91D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795AC1621EE88E7100E7D91D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		795AC14F1EE88E7100E7D91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795AC1591EE88E7100E7D91D /* ViewController.swift in Sources */,
+				795AC1571EE88E7100E7D91D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795AC1601EE88E7100E7D91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795AC1691EE88E7100E7D91D /* SpritzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		795AC1661EE88E7100E7D91D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 795AC1521EE88E7100E7D91D /* Spritz */;
+			targetProxy = 795AC1651EE88E7100E7D91D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		795AC15C1EE88E7100E7D91D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				795AC15D1EE88E7100E7D91D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		795AC16B1EE88E7100E7D91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		795AC16C1EE88E7100E7D91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		795AC16E1EE88E7100E7D91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Spritz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RichardTodd.Spritz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		795AC16F1EE88E7100E7D91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Spritz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RichardTodd.Spritz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		795AC1711EE88E7100E7D91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpritzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RichardTodd.SpritzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spritz.app/Contents/MacOS/Spritz";
+			};
+			name = Debug;
+		};
+		795AC1721EE88E7100E7D91D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpritzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RichardTodd.SpritzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spritz.app/Contents/MacOS/Spritz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		795AC14E1EE88E7100E7D91D /* Build configuration list for PBXProject "Spritz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795AC16B1EE88E7100E7D91D /* Debug */,
+				795AC16C1EE88E7100E7D91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		795AC16D1EE88E7100E7D91D /* Build configuration list for PBXNativeTarget "Spritz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795AC16E1EE88E7100E7D91D /* Debug */,
+				795AC16F1EE88E7100E7D91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		795AC1701EE88E7100E7D91D /* Build configuration list for PBXNativeTarget "SpritzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795AC1711EE88E7100E7D91D /* Debug */,
+				795AC1721EE88E7100E7D91D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 795AC14B1EE88E7100E7D91D /* Project object */;
+}
