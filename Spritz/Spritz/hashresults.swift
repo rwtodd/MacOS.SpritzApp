@@ -43,12 +43,13 @@ class HashResults : NSObject, NSTableViewDataSource, NSTableViewDelegate {
         
         let cellid = tableColumn?.identifier ?? "???"
         if let vw = tableView.make(withIdentifier: cellid, owner: nil) as? NSTableCellView {
-            if tableColumn?.headerCell.title == "Source" {
-                vw.textField?.stringValue = res.src
-            } else if tableColumn?.headerCell.title == "Bits" {
-                vw.textField?.stringValue = "\(res.bits)"
-            } else {
-                vw.textField?.stringValue = res.hash
+            switch tableColumn?.headerCell.title ?? "?" {
+                case "Source":
+                    vw.textField?.stringValue = res.src
+                case "Bits":
+                    vw.textField?.stringValue = String(res.bits)
+                default:
+                    vw.textField?.stringValue = res.hash
             }
             return vw
         }
