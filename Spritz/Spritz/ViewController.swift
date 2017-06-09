@@ -11,19 +11,26 @@ import SpritzLib
 
 class ViewController: NSViewController {
 
-    @IBAction func valChanged(_ sender: NSTextField) {
-
+    @IBOutlet weak var resultsTbl: NSTableView!
+    private let hr : HashResults
+    
+    @IBAction func doHash(_ sender: Any) {
         let nBytes = (Int(tgtBits.intValue) + 7) / 8
         var result : [UInt8] = Array(repeating: 0, count: nBytes)
         if !SpritzLib.hash(fileAtPath: srcInput.stringValue, tgt: &result) {
             // fall back on literal text hash...
             SpritzLib.hash(string: srcInput.stringValue, tgt: &result)
         }
-        tgtOutput.string =  Data(bytesNoCopy: &result, count: result.count, deallocator: .none).base64EncodedString()
-        
+        let b64out = Data(bytesNoCopy: &result, count: result.count, deallocator: .none).base64EncodedString()
+        hr.add(src: srcInput.stringValue, bits: Int(tgtBits.intValue), hash: b64out)
+        resultsTbl.reloadData()
     }
     
-    @IBOutlet var tgtOutput: NSTextView!
+    required init?(coder: NSCoder) {
+        hr = HashResults()
+        super.init(coder: coder)
+    }
+    
     @IBOutlet weak var srcInput: NSTextField!
     @IBOutlet weak var tgtBits: NSTextField!
     
@@ -31,7 +38,8 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         srcInput.stringValue = "abc"
         tgtBits.intValue = 256
-        valChanged(srcInput)
+        resultsTbl.delegate = hr
+        resultsTbl.dataSource = hr
         
         // Do any additional setup after loading the view.
     }
