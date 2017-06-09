@@ -17,13 +17,19 @@ class ViewController: NSViewController {
     @IBAction func doHash(_ sender: Any) {
         let nBytes = (Int(tgtBits.intValue) + 7) / 8
         var result : [UInt8] = Array(repeating: 0, count: nBytes)
-        if !SpritzLib.hash(fileAtPath: srcInput.stringValue, tgt: &result) {
-            // fall back on literal text hash...
-            SpritzLib.hash(string: srcInput.stringValue, tgt: &result)
+        let srcPath = srcInput.stringValue
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            if !SpritzLib.hash(fileAtPath: srcPath, tgt: &result) {
+                // fall back on literal text hash...
+                SpritzLib.hash(string: srcPath, tgt: &result)
+            }
+            let b64out = Data(bytesNoCopy: &result, count: result.count, deallocator: .none).base64EncodedString()
+            DispatchQueue.main.async {
+                self.hr.add(src: srcPath, bits: nBytes*8, hash: b64out)
+                self.resultsTbl.reloadData()
+            }
         }
-        let b64out = Data(bytesNoCopy: &result, count: result.count, deallocator: .none).base64EncodedString()
-        hr.add(src: srcInput.stringValue, bits: Int(tgtBits.intValue), hash: b64out)
-        resultsTbl.reloadData()
     }
     
     required init?(coder: NSCoder) {
